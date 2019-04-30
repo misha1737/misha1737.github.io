@@ -1,0 +1,47 @@
+.sparks_back{
+	//animation: news_action 3s ease-in-out;
+	animation: flicker 2s infinite;
+}
+.sparks_front{
+	//animation: news_action 3s ease-in-out;
+	animation: flickerFront 2s infinite;
+}
+.infoBlock__bonus{
+	//animation: news_action 3s ease-in-out;
+	animation: zoom 2s;
+}
+.infoBlock__code, .infoBlock__playNow{
+	//animation: news_action 3s ease-in-out;
+	animation: opacity 4s;
+}
+
+
+
+
+@keyframes flicker{
+0%{opacity: 1}	
+50% {opacity: 0.4}
+
+100%{opacity: 1}
+}
+@keyframes flickerFront{
+0%{opacity: 0.4}	
+50% {opacity: 1}
+
+100%{opacity: 0.4}
+}
+
+@keyframes zoom{
+0%{transform: scale(0, 0)}	
+
+
+100%{transform: scale(1, 1)}
+}
+
+@keyframes opacity{
+0%{opacity: 0}	
+
+50%{opacity: 0}
+100%{opacity: 1}
+}
+

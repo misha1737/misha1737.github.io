@@ -1,0 +1,321 @@
+ body{
+ background:  url(../../img/bg.jpg);
+  	background-position: center center; 
+  	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	height:100vh;
+ 	max-width:100%;
+ 		//overflow: hidden;
+ 		margin:0;
+ 	
+ }
+ #container{
+ 	overflow: hidden;
+
+ 	width:100%;
+height:100vh;
+ }
+#scene{
+	.bg img{
+		width:100%;
+	}
+
+	.witcher img{
+		height:100vh;
+		margin-top: 5vh;
+
+	}
+	.sparks_front img{
+		margin-top: 5vh;
+		height:100vh;
+		max-width: 70%;
+	}
+	.sparks_back img{
+		margin-top: 5vh;
+		height:100vh;
+
+	}
+
+		
+}
+
+.infoBlock{
+	height: 100vh;
+	position: absolute;
+	top:0;
+	right:0;
+	width:50%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	.infoBlock__bonus{
+		text-align: center;
+		h2{
+			margin:0;
+			font-size: 180px;
+			font-family: $cambriab;
+			text-transform: uppercase;
+			color:white;
+			 text-shadow: 5px 5px 5px black;
+		}
+		h1{
+			margin:0;
+			font-size: 60px;
+			font-family: $cambriab;
+			text-transform: uppercase;
+			color:white;
+			 text-shadow: 5px 5px 5px black;
+
+		}
+
+	}
+	.infoBlock__code{
+		border: 1px dashed $gray;
+		//height:40px;
+		margin:30px;
+		padding:15px;
+				border-radius:50px;
+		.infoButton{
+			font-size: 36px;
+			font-family: arial;
+			text-transform: uppercase;
+			color:$red;
+			//border: 1px solid $gray;
+			line-height:36px;
+				vertical-align: middle;
+				padding:10px 20px;
+				font-weight: 500;
+				border-right:1px solid $gray;
+
+		}
+		
+		.codeButton{
+			font-size: 18px;
+			font-family: arial;
+			text-transform: uppercase;
+			color:$white;
+			//border: 1px solid $gray;
+			line-height:36px;
+			vertical-align: middle;
+			padding:10px 20px;
+			cursor:pointer;
+			transition: 0.8s;
+			&:hover{
+				color:$red;
+			}
+		}
+	}
+	.infoBlock__playNow{
+		@include button();
+		padding:5px 90px;
+		margin-top: 10px;
+		box-shadow: 5px 5px 5px black;
+	}
+
+
+}
+
+
+footer{
+	position: absolute;
+	bottom:20px;
+	width:100%;
+	.footerLogo{
+	//	display: inline-block;
+	width:100px;
+	display: inline-block;
+	margin:20px 5%;
+	}
+	.footerComent{
+	//	display: inline-block;
+	color:$gray;
+	font-size: 12px;
+	font-family: arial;
+	//right:0px;
+	display: inline-block;
+	float:right;
+	margin:20px 5%;
+	//float:right;
+	}
+}
+
+
+
+@media all and (orientation: portrait) {
+.infoBlock{
+	height: 100vh;
+	position: absolute;
+	top:0;
+	right:0;
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+
+}
+#scene{
+	.bg img{
+		width:100%;
+	}
+
+	.witcher img{
+		height:70vh;
+		margin-top: 30vh;
+
+	}
+	.sparks_front img{
+		margin-top: 5vh;
+		height:100vh;
+		max-width: 70%;
+	}
+	.sparks_back img{
+		margin-top: 5vh;
+		height:100vh;
+
+	}
+
+		
+}
+
+
+}
+
+@media screen and (max-width:768px) {
+
+
+.infoBlock{
+	.infoBlock__bonus{
+		h2{
+			margin:0;
+			font-size: 90px;
+			
+		}
+		h1{
+			margin:0;
+			font-size: 30px;
+		}
+	}
+	.infoBlock__code{
+
+		margin:30px;
+		padding:15px;
+				border-radius:50px;
+		.infoButton{
+			font-size: 18px;
+			font-family: arial;
+			text-transform: uppercase;
+			color:$red;
+			//border: 1px solid $gray;
+			line-height:18px;
+				vertical-align: middle;
+				padding:16px 16px;
+				font-weight: 500;
+				border-right:1px solid $gray;
+
+		}
+		
+		.codeButton{
+			font-size: 10px;
+			font-family: arial;
+			text-transform: uppercase;
+			color:$white;
+			//border: 1px solid $gray;
+			line-height:18px;
+			vertical-align: middle;
+			padding:16px 16px;
+			cursor:pointer;
+			transition: 0.8s;
+			&:hover{
+				color:$red;
+			}
+		}
+	}
+	.infoBlock__playNow{
+		@include button();
+		padding:5px 85px;
+		margin-top: 10px;
+	}
+}
+
+}
+@media screen and (max-height:400px) {
+.infoBlock{
+	.infoBlock__bonus{
+		h2{
+			margin:0;
+			font-size: 60px;
+			
+		}
+		h1{
+			margin:0;
+			font-size: 20px;
+		}
+	}
+	.infoBlock__code{
+
+		margin:10px;
+		padding:15px;
+				border-radius:50px;
+		.infoButton{
+			font-size: 12px;
+			font-family: arial;
+			text-transform: uppercase;
+			color:$red;
+			//border: 1px solid $gray;
+			line-height:12px;
+				vertical-align: middle;
+				padding:8px 8px;
+				font-weight: 500;
+				border-right:1px solid $gray;
+
+		}
+		
+		.codeButton{
+			font-size: 8px;
+			font-family: arial;
+			text-transform: uppercase;
+			color:$white;
+			//border: 1px solid $gray;
+			line-height:12px;
+			vertical-align: middle;
+			padding:8px 8px;
+			cursor:pointer;
+			transition: 0.8s;
+			&:hover{
+				color:$red;
+			}
+		}
+	}
+	.infoBlock__playNow{
+		@include button();
+		padding:0px 40px;
+		margin-top: 5px;
+	}
+}
+
+footer{
+
+	bottom:5px;
+	width:100%;
+	.footerLogo{
+	//	display: inline-block;
+	width:100px;
+	display: inline-block;
+	margin:0px 5%;
+	}
+	.footerComent{
+	//	display: inline-block;
+	color:$gray;
+	font-size: 12px;
+	font-family: arial;
+	//right:0px;
+	display: inline-block;
+	float:right;
+	margin:20px 5%;
+	//float:right;
+	}
+}
+
+}

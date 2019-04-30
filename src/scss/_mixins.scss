@@ -1,0 +1,17 @@
+
+@mixin button($size:10px, $backgroundColor:$red, $color:$white,$family:arial){
+	font-size: $size;
+	background-color: $backgroundColor;
+	color:$color;
+	font-family: $family;
+	border: none;
+	border-radius: 50px;
+	outline:none;
+	text-transform: uppercase;
+	transition: 0.8s;
+	cursor:pointer;
+	 &:hover{
+	 	transform: scale(1.05, 1.05);
+	 	background-color: $backgroundColor/2;
+	 }
+}

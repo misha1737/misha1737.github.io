@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Witcher</title>
+	<link href="build/css/index.css" rel="stylesheet">
+</head>
+<body>
+	<div id="container" >
+		<ul id="scene">
+			<!-- <li class='bg' data-depth="0.80"><img src="img/bg.jpg"></li> -->
+			<li class='sparks_back' data-depth="0.20"><img src="img/sparks_back.png"></li>
+			<li class='witcher' data-depth="0.30"><img src="img/witcher.png"></li>
+			
+			<li class='sparks_front' data-depth="0.40"><img src="img/sparks_front.png"></li>
+			
+		</ul>
+
+
+		
+	</div>
+	<div class="infoBlock">
+		
+		<div class="infoBlock__bonus">	
+			<h2>300%</h2>
+			<h1>welcome bonus</h1>
+		</div>
+		<div class="infoBlock__code">
+			<span class="infoButton" id="secretCode">witcher </span><span class="codeButton" id="codeButton" >copy code</span>
+<span id="msg"></span>
+		</div>
+		<div class="infoBlock__playNow">
+			<h2>play now</h2>
+		</div>
+</div>
+<footer>
+	<div class="footerLogo"><img src="img/logo.svg" alt=""></div>
+	<div class="footerComent">*Terms and Conditions Apply</div>
+
+</footer>
+</body>
+
+</html>
+<script src="build/js/jquery-2.1.4.min.js"></script> 
+<script src="build/js/parallax.min.js"></script> 
+<script src="build/js/all.js"></script> 
+
+<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+
+</script>
+
+
+
+
+
+							
